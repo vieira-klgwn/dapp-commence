@@ -1,21 +1,20 @@
 var helloWorldABI = [
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "hello",
-    "outputs": [
-      {
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "pure",
-    "type": "function",
-    "signature": "0x19ff1d21"
-  }
-];
-var helloWorldAddress = '0x4742589bB4A318E8c8Fc8b9bD40847c467f11393'; 
+    {
+      "inputs": [],
+      "name": "hello",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function",
+      "constant": true
+    }
+  ];
+var helloWorldAddress = '0x79c51d9ddAc513D76aed7502E09f7B336fEA754E'; 
 var web3 = new Web3('http://localhost:9545');
 var helloWorld = new web3.eth.Contract(helloWorldABI, helloWorldAddress);
 
