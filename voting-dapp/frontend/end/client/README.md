@@ -1,0 +1,1 @@
+to run the frontend go in the client folder and run "NODE_OPTIONS=--openssl-legacy-provider npm run start"
